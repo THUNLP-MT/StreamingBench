@@ -50,7 +50,7 @@ https://github.com/user-attachments/assets/e6d1655d-ab3f-47a7-973a-8fd6c8962307
 ### Requirements
 
 - Python 3.x
-- moviepy
+- ffmpeg-python
 
 ### Data Preparation
 
