@@ -94,15 +94,17 @@ bash stats.sh
 ## 🔬 Experimental Results
 
 ### Performance of Various MLLMs on StreamingBench
-- All Context
+- 60 seconds of context preceding the query time (Main)
+<div align="center">
+  <img src="./figs/result_2.png" width="80%" alt="Task Taxonomy">
+</div>
+
+- All Context (+ Long Context)
 <div align="center">
   <img src="./figs/result_1.png" width="80%" alt="Task Taxonomy">
 </div>
 
-- 60 seconds of context preceding the query time
-<div align="center">
-  <img src="./figs/result_2.png" width="80%" alt="Task Taxonomy">
-</div>
+
 
 - Comparison of Main Experiment vs. 60 Seconds of Video Context
 - <div align="center">
