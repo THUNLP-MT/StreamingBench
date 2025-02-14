@@ -24,3 +24,16 @@ def get_model_response(model, file, inp):
     inp: Input prompt
     """
     return model.Run(file, inp)
+
+
+def get_model_response_text_stream(model, file, audio, session, isBegin, inp):
+    """
+    Get the model response for the given input
+    Model: Model name
+    file: Video file path
+    audio: Audio instruction file path
+    session: Streaming session
+    isBegin: Whether the first query or not
+    inp: Input prompt
+    """
+    return model.Run(file, audio, session, isBegin, inp)
