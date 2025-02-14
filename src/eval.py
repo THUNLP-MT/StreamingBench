@@ -21,6 +21,9 @@ def main(args):
     if args.benchmark_name == "StreamingSQA":
         from benchmark.StreamingBenchSQA import StreamingBenchSQA
         benchmark = StreamingBenchSQA(data)
+    if args.benchmark_name == "StreamingOpenStreamText":
+        from benchmark.StreamingOpenStreamText import StreamingOpenStreamText
+        benchmark = StreamingOpenStreamText(data)
 
     ##########################
 
@@ -31,6 +34,14 @@ def main(args):
     if args.model_name == "MiniCPM-V":
         from model.MiniCPMV import MiniCPMV
         model = MiniCPMV()
+    if args.model_name == "MiniCPMo":
+        print("MiniCPMo loaded")
+        from model.MiniCPMo import MiniCPMo
+        model = MiniCPMo()
+    if args.model_name == "IXC2d5_OL":
+        print("IXC2d5_OL loaded")
+        from model.IXC2d5_OL import IXC2d5_OL
+        model = IXC2d5_OL()
 
     ######################
 
