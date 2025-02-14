@@ -36,4 +36,4 @@ def get_model_response_text_stream(model, file, audio, session, isBegin, inp):
     isBegin: Whether the first query or not
     inp: Input prompt
     """
-    return model.Run(file, audio, session, isBegin, inp)
+    return model.Run_Text_Stream(file, audio, session, isBegin, inp)
