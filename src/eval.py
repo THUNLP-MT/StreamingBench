@@ -38,14 +38,10 @@ def main(args):
         print("MiniCPMo loaded")
         from model.MiniCPMo import MiniCPMo
         model = MiniCPMo()
-    if args.model_name == "IXC2d5_OL":
-        print("IXC2d5_OL loaded")
-        from model.IXC2d5_OL import IXC2d5_OL
-        model = IXC2d5_OL()
 
     ######################
 
-    benchmark.eval(data, model, args.output_file)
+    benchmark.eval(data, model, args.output_file, args.context_time)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -53,5 +49,6 @@ if __name__ == "__main__":
     parser.add_argument("--model_name", type=str, required=True, help="Name of the model")
     parser.add_argument("--benchmark_name", type=str, required=True, help="Name of the benchmark")
     parser.add_argument("--output_file", type=str, required=True, help="Path to the output file")
+    parser.add_argument("--context_time", type=int, required=True, help="Time before the query")
     args = parser.parse_args()
     main(args)
