@@ -18,13 +18,13 @@ class StreamingBenchProactive(Benchmark):
     def __init__(self, data):
         StreamingBenchProactiveInit(data)
 
-    def eval(self, data, model, output_path):
-        StreamingBenchProactiveEval(data, model, output_path)
+    def eval(self, data, model, output_path, context_time):
+        StreamingBenchProactiveEval(data, model, output_path, context_time)
 
 def StreamingBenchProactiveInit(data):
     pass
 
-def StreamingBenchProactiveEval(data, MODEL, output_path):
+def StreamingBenchProactiveEval(data, MODEL, output_path, context_time):
     for subset in tqdm.tqdm(data):
         for question in subset["questions"]:
             if MODEL.name() in question and question[MODEL.name()]['dialog_history'][-1]['content']:

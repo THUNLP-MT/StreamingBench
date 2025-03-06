@@ -5,22 +5,6 @@ from utils.data_execution import get_model_response_text_stream
 from utils.video_execution import split_video
 
 from benchmark.Benchmark import Benchmark
-import time
-import psutil
-import torch
-from PIL import Image
-from modelscope import AutoModel, AutoTokenizer
-import math
-import numpy as np
-from PIL import Image
-from moviepy.editor import VideoFileClip
-import tempfile
-import librosa
-import soundfile as sf
-
-import logging
-
-
 
 PROMPT_TEMPLATE = '''You are an advanced video question-answering AI assistant. You have been provided with some frames from the video and a multiple-choice question related to the video. Your task is to carefully analyze the video and provide the best answer to question, choosing from the four options provided. Respond with only the letter (A, B, C, or D) of the correct option.
 
@@ -41,13 +25,13 @@ class StreamingOpenStreamText(Benchmark):
     def __init__(self, data):
         StreamingOpenStreamTextInit(data)
 
-    def eval(self, data, model, output_path):
-        StreamingOpenStreamTextEval(data, model, output_path)
+    def eval(self, data, model, output_path, context_time):
+        StreamingOpenStreamTextEval(data, model, output_path, context_time)
 
 def StreamingOpenStreamTextInit(data):
     pass
 
-def StreamingOpenStreamTextEval(data, MODEL, output_path):
+def StreamingOpenStreamTextEval(data, MODEL, output_path, context_time):
     for subset in tqdm(data):
         isBegin = True
         prev_time = 0

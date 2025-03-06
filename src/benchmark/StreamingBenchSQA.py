@@ -26,13 +26,13 @@ class StreamingBenchSQA(Benchmark):
     def __init__(self, data):
         StreamingBenchSQAInit(data)
 
-    def eval(self, data, model, output_path):
-        StreamingBenchSQAEval(data, model, output_path)
+    def eval(self, data, model, output_path, context_time):
+        StreamingBenchSQAEval(data, model, output_path, context_time)
 
 def StreamingBenchSQAInit(data):
     pass
 
-def StreamingBenchSQAEval(data, MODEL, output_path):
+def StreamingBenchSQAEval(data, MODEL, output_path, context_time):
     for video_data in tqdm.tqdm(data):  
         context = ""
         for subset in video_data:  
@@ -45,7 +45,12 @@ def StreamingBenchSQAEval(data, MODEL, output_path):
                 # convert timestamps like "00:03:10" to seconds
                 timestamp = sum(int(x) * 60 ** i for i, x in enumerate(reversed(timestamp.split(":"))))
 
-                file = split_video(video_path, 0, timestamp)
+                if context_time > 0:
+                    time_start = max(0, timestamp - context_time)
+                else:
+                    time_start = 0
+
+                file = split_video(video_path, time_start, timestamp)
 
                 ques = question["question"]
                 options = question["options"]
