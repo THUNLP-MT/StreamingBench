@@ -17,7 +17,7 @@ BENCHMARK="Streaming"
 
 if [ "$EVAL_MODEL" = "MiniCPM-V" ]; then
     conda activate MiniCPM-V
-    CUDA_VISIBLE_DEVICES=$Devices python eval.py --model_name $EVAL_MODEL --benchmark_name $BENCHMARK --data_file $DATA_FILE --output_file $OUTPUT_FILE --context_time $$CONTEXT_TIME
+    CUDA_VISIBLE_DEVICES=$Devices python eval.py --model_name $EVAL_MODEL --benchmark_name $BENCHMARK --data_file $DATA_FILE --output_file $OUTPUT_FILE --context_time $CONTEXT_TIME
 fi
 
 # For omni-source understanding(Offline + Text Instruction)
@@ -29,7 +29,7 @@ BENCHMARK="Streaming"
 
 if [ "$EVAL_MODEL" = "MiniCPM-V" ]; then
     conda activate MiniCPM-V
-    CUDA_VISIBLE_DEVICES=$Devices python eval.py --model_name $EVAL_MODEL --benchmark_name $BENCHMARK --data_file $DATA_FILE --output_file $OUTPUT_FILE --context_time $$CONTEXT_TIME
+    CUDA_VISIBLE_DEVICES=$Devices python eval.py --model_name $EVAL_MODEL --benchmark_name $BENCHMARK --data_file $DATA_FILE --output_file $OUTPUT_FILE --context_time $CONTEXT_TIME
 fi
 
 # For sequential question answering(Offline + Text Instruction)
@@ -41,7 +41,7 @@ BENCHMARK="StreamingSQA"
 
 if [ "$EVAL_MODEL" = "MiniCPM-V" ]; then
     conda activate MiniCPM-V
-    CUDA_VISIBLE_DEVICES=$Devices python eval.py --model_name $EVAL_MODEL --benchmark_name $BENCHMARK --data_file $DATA_FILE --output_file $OUTPUT_FILE --context_time $$CONTEXT_TIME
+    CUDA_VISIBLE_DEVICES=$Devices python eval.py --model_name $EVAL_MODEL --benchmark_name $BENCHMARK --data_file $DATA_FILE --output_file $OUTPUT_FILE --context_time $CONTEXT_TIME
 fi
 # For proactive output(Offline + Text Instruction)
 
@@ -52,7 +52,7 @@ BENCHMARK="StreamingProactive"
 
 if [ "$EVAL_MODEL" = "MiniCPM-V" ]; then
     conda activate MiniCPM-V
-    CUDA_VISIBLE_DEVICES=$Devices python eval.py --model_name $EVAL_MODEL --benchmark_name $BENCHMARK --data_file $DATA_FILE --output_file $OUTPUT_FILE --context_time $$CONTEXT_TIME
+    CUDA_VISIBLE_DEVICES=$Devices python eval.py --model_name $EVAL_MODEL --benchmark_name $BENCHMARK --data_file $DATA_FILE --output_file $OUTPUT_FILE --context_time $CONTEXT_TIME
 fi
 
 # (Streaming/Online + Text Instruction)
@@ -65,5 +65,5 @@ BENCHMARK="StreamingOpenStreamText"
 
 if [ "$EVAL_MODEL" = "MiniCPM-V" ]; then
     conda activate MiniCPM-V
-    CUDA_VISIBLE_DEVICES=$Devices python eval.py --model_name $EVAL_MODEL --benchmark_name $BENCHMARK --data_file $DATA_FILE --output_file $OUTPUT_FILE --context_time $$CONTEXT_TIME
+    CUDA_VISIBLE_DEVICES=$Devices python eval.py --model_name $EVAL_MODEL --benchmark_name $BENCHMARK --data_file $DATA_FILE --output_file $OUTPUT_FILE --context_time $CONTEXT_TIME
 fi
