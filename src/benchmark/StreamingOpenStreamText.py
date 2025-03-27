@@ -56,7 +56,6 @@ def StreamingOpenStreamTextEval(data, MODEL, output_path, context_time):
             else:
                 inp = PROMPT_TEMPLATE_WITHOUT_OPTIONS.format(ques)
                 inp += "\n\nAnswer:"
-            inp = None
             print(f"input: {inp}")
             if isBegin:
                 response, results = get_model_response_text_stream(MODEL, file, audio_path, '123', isBegin, inp)
