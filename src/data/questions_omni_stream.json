@@ -5106,7 +5106,7 @@
             {
                 "task_type": "Scene Understanding",
                 "question": "Please describe the scene that just occurred in the video?",
-                "time_stamp": "00:06:22",
+                "time_stamp": "00:04:22",
                 "answer": "A",
                 "options": [
                     "A. A man in a yellow raincoat and blue hat stands on a rock facing a spectacular waterfall. Music plays in the background.",
@@ -5116,7 +5116,7 @@
                 ],
                 "required_ability": "episodic memory",
                 "audio_path": "./audio/omni/sample_41_Scene_Understanding_26-50_00_06_22.wav",
-                "time": "[0:06:00 - 0:07:00]"
+                "time": "[0:04:00 - 0:05:00]"
             }
         ],
         "video_path": "./videos/sample_41_Scene_Understanding_26-50.mp4"
