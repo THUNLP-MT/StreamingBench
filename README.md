@@ -13,6 +13,23 @@
 
 **StreamingBench** evaluates **Multimodal Large Language Models (MLLMs)** in real-time, streaming video understanding tasks. 🌟
 
+
+
+
+------
+
+[**NEW!** 2025.05.15] 🔥: Congrats to Seed1.5-VL for achieving ALL model SOTA with a score of 82.80 on the Proactive Output.
+
+[**NEW!** 2025.03.17] ⭐: Congrats to ViSpeeker for achieving Open-Source SOTA with a score of 61.60 on the Omni-Source Understanding.
+
+[**NEW!** 2025.01.14] 🚀: Congrats to MiniCPM-o 2.6 for achieving Streaming SOTA with a score of 66.01 on the Overall benchmark.
+
+[**NEW!** 2025.01.06] 🏆: Congrats to Dispider for achieving Streaming SOTA with a score of 53.12 on the Overall benchmark.
+
+[**NEW!** 2024.12.09] 🎉: Congrats to InternLM-XComposer2.5-OmniLive for achieving 73.79 on Real-Time Visual Understanding.
+
+------
+
 ## 🎞️ Overview
 
 As MLLMs continue to advance, they remain largely focused on offline video comprehension, where all frames are pre-loaded before making queries. However, this is far from the human ability to process and respond to video streams in real-time, capturing the dynamic nature of multimedia content. To bridge this gap, **StreamingBench** introduces the first comprehensive benchmark for streaming video understanding in MLLMs.
