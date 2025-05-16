@@ -18,15 +18,15 @@
 
 ------
 
-[**NEW!** 2025.05.15] 🔥: Congrats to Seed1.5-VL for achieving ALL model SOTA with a score of 82.80 on the Proactive Output.
+[**NEW!** 2025.05.15] 🔥: [Seed1.5-VL](https://github.com/ByteDance-Seed/Seed1.5-VL) achieved ALL model SOTA with a score of 82.80 on the Proactive Output.
 
-[**NEW!** 2025.03.17] ⭐: Congrats to ViSpeeker for achieving Open-Source SOTA with a score of 61.60 on the Omni-Source Understanding.
+[**NEW!** 2025.03.17] ⭐: [ViSpeeker](https://arxiv.org/abs/2503.12769) achieved Open-Source SOTA with a score of 61.60 on the Omni-Source Understanding.
 
-[**NEW!** 2025.01.14] 🚀: Congrats to MiniCPM-o 2.6 for achieving Streaming SOTA with a score of 66.01 on the Overall benchmark.
+[**NEW!** 2025.01.14] 🚀: [MiniCPM-o 2.6](https://github.com/OpenBMB/MiniCPM-o) achieved Streaming SOTA with a score of 66.01 on the Overall benchmark.
 
-[**NEW!** 2025.01.06] 🏆: Congrats to Dispider for achieving Streaming SOTA with a score of 53.12 on the Overall benchmark.
+[**NEW!** 2025.01.06] 🏆: [Dispider](https://github.com/Mark12Ding/Dispider) achieved Streaming SOTA with a score of 53.12 on the Overall benchmark.
 
-[**NEW!** 2024.12.09] 🎉: Congrats to InternLM-XComposer2.5-OmniLive for achieving 73.79 on Real-Time Visual Understanding.
+[**NEW!** 2024.12.09] 🎉: [InternLM-XComposer2.5-OmniLive](https://github.com/InternLM/InternLM-XComposer) achieved 73.79 on Real-Time Visual Understanding.
 
 ------
 
